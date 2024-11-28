@@ -12,11 +12,11 @@ input_kml = r"C:\Users\sarah\Documents\GitHub\bay-area\data\bus_routes\doc.kml"
 
 # Load Stations layer
 stations = gpd.read_file(input_kml, layer="Bart Station")
-stations.to_file(r"C:\Users\sarah\Documents\GitHub\bay-area\data\stations.geojson", driver="GeoJSON")
+stations.to_file(r"C:\Users\sarah\Documents\GitHub\bay-area\static\data\stations.geojson", driver="GeoJSON")
 
 # Load Routes layer
 routes = gpd.read_file(input_kml, layer="BART Track")
-routes.to_file(r"C:\Users\sarah\Documents\GitHub\bay-area\data\routes.geojson", driver="GeoJSON")
+routes.to_file(r"C:\Users\sarah\Documents\GitHub\bay-area\static\data\routes.geojson", driver="GeoJSON")
 
 print("Layers converted to GeoJSON!")
 
